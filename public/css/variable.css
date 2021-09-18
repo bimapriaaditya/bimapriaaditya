@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'quicksand';
+  src: url('../dist/vendors/typeface-quicksand/quicksand-latin-400.woff');
+}
+:root {
+  /* Color */
+  --background: #202225;
+  --dark: #141618;
+  --border-light: #dee2e6;
+  --green: #27ae60;
+  --dark-green: #43bd76;
+  --blue: #3498db;
+  --dark-blue: #2980b9;
+  --white-hover: rgba(0,0,0,.05);
+  --light-gray: #cad0d6;
+  --dark-gray: #F1F2F6;
+  /* value */
+  --shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  --shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+  --rounded: 0.25rem !important;
+  --p1: 0.25rem !important;
+  --clamp-h5: clamp(14px, 2vw, 20px) !important;
+  --clamp-h2: clamp(16px, 3vw, 32px) !important;
+}
+.let-1{
+  letter-spacing: 1px;
+}
+.let-2{
+  letter-spacing: 2px;
+}
+.let-3{
+  letter-spacing: 3px;
+}
+.let-6{
+  letter-spacing: 6px;
+}
+.f-12{
+  font-size: 12px;
+}
+.f-13{
+  font-size: 13px;
+}
+.f-14{
+  font-size: 14px;
+}
+.f-16{
+  font-size: 16px;
+}
+.f-18{
+  font-size: 18px;
+}
+.f-20{
+  font-size: 20px;
+}
+.lh-1{
+  line-height: 1 !important;
+}
+.special-heading-1{
+  font-size: 45px;
+}
+html{
+  background: var(--background);
+}
+body{
+  color: #ffffff;
+  font-family: "quicksand" !important;
+}
+.icon{
+  width: 14px;
+  display: inline-block;
+}
+.icon-cross::before{
+  content: url(../svg/cross.svg);
+}
+.icon-triangel::before{
+  content: url(../svg/triangel.svg);
+}
+.icon-hexagon::before{
+  content: url(../svg/hexagon.svg);
+}
+.simple-ease{
+  position: relative;
+}
+.simple-ease{
+  position: relative;
+  transition: 0.4s;
+}
+.simple-ease::before{
+  content: "";
+  width: 0;
+  height: 4px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: var(--border-light);  
+  transition: 0.4s;
+}
+.simple-ease::before{
+  width: 0;
+}
+.simple-ease:hover::before{
+  width: calc(100% + 25px);
+}
+.simple-ease > *{
+  transition: 0.25s;
+}
+.simple-ease:hover > *{
+  transform: translateY(-10px);
+}
+@keyframes fadeup {
+  0%{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+  }
+  30%{
+    opacity: 1;
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes fadeleft {
+  0%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes rotateTriangel {
+  0%{
+    transform: translate(-50px, 40vh) rotate(-360deg);
+  }
+  100%{
+    transform: translate(-50px, 40vh) rotate(45deg);
+  }
+}
+@keyframes rotateHexagon {
+  0%{
+    transform: translate(200px, 70px) rotate(360deg) scale(1.25);
+  }
+  100%{
+    transform: translate(200px, 70px) rotate(45deg) scale(1.25);
+  }
+}
+@keyframes rotateCross {
+  0%{
+    transform: translate(270px, 35vh) rotate(-360deg)scale(1.1);
+  }
+  100%{
+    transform: translate(270px, 35vh) rotate(45deg)scale(1.1);
+  }
+}

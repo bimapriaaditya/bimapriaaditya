@@ -7,8 +7,8 @@
   <title>Bima Pria Aditya</title>
   <link rel="stylesheet" href="public/css/variable.css">
   <link rel="stylesheet" href="public/css/style.css">
-  <link rel="stylesheet" href="public/dist/vendors/bootstrap/css/bootstrap.min.css" newLink="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/dist/vendors/fontawesome-free/css/all.min.css" newLink="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="public/dist/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/dist/vendors/fontawesome-free/css/all.min.css">
 </head>
 <body>
   <section class="parallax full first end-shadow">
@@ -68,22 +68,6 @@
       </div>
     </div>
   </section>
-  <script src="public/dist/vendors/bootstrap/js/bootstrap.bundle.min.js" newScr="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    newLink()
-    function newLink() {
-      newLink = document.querySelectorAll('[newLink]');
-      for (let i = 0; i < newLink.length; i++) {
-        newLink[i].href = newLink[i].getAttribute('newLink');
-      }
-    }
-    newScript()
-    function newScript() {
-      newScr = document.querySelectorAll('[newScr]');
-      for (let i = 0; i < newScr.length; i++) {
-        newScr[i].src = newScr[i].getAttribute('newScr');
-      }
-    }
-  </script>
+  <script src="public/dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

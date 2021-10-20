@@ -88,17 +88,16 @@
   z-index: 1;
 }
 .parallax > .parallax-image > .extra .icon{
-  width: 150px;
   position: absolute;
   z-index: 1;
 }
-.parallax > .parallax-image > .extra .icon-triangel{
+.parallax > .parallax-image > .extra .icon-triangle{
   transform: translate(-50px, 40vh) rotate(45deg);
 }
 .parallax > .parallax-image > .extra .icon-hexagon{
   transform: translate(200px, 70px) rotate(45deg) scale(1.25);
 }
-.parallax > .parallax-image > .extra .icon-cross{
+.parallax > .parallax-image > .extra .icon-plus{
   transform: translate(270px, 35vh) rotate(45deg)scale(1.1);
 }
 .parallax > .parallax-image > .extra .anime-rotate{
@@ -109,12 +108,12 @@
   transition: 0.4s;
   animation-duration: 3s;
 }
-.parallax > .parallax-image > .extra .anime-rotate > .icon.icon-triangel{
+.parallax > .parallax-image > .extra .anime-rotate > .icon.icon-triangle{
   animation-name: rotateTriangel;
 }
 .parallax > .parallax-image > .extra .anime-rotate > .icon.icon-hexagon{
   animation-name: rotateHexagon;
 }
-.parallax > .parallax-image > .extra .anime-rotate > .icon.icon-cross{
+.parallax > .parallax-image > .extra .anime-rotate > .icon.icon-plus{
   animation-name: rotateCross;
 }

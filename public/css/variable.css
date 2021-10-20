@@ -7,10 +7,11 @@
   --background: #202225;
   --dark: #141618;
   --border-light: #dee2e6;
-  --green: #27ae60;
+  --green: #1ABC9C;
   --dark-green: #43bd76;
-  --blue: #3498db;
+  --blue: #3498DB;
   --dark-blue: #2980b9;
+  --red: #E74C3C;
   --white-hover: rgba(0,0,0,.05);
   --light-gray: #cad0d6;
   --dark-gray: #F1F2F6;
@@ -58,6 +59,15 @@
 .special-heading-1{
   font-size: 45px;
 }
+.text-blue{
+  color: var(--blue) !important;
+}
+.text-green{
+  color: var(--green) !important;
+}
+.text-red{
+  color: var(--red) !important;
+}
 html{
   background: var(--background);
 }
@@ -66,17 +76,7 @@ body{
   font-family: "quicksand" !important;
 }
 .icon{
-  width: 14px;
-  display: inline-block;
-}
-.icon-cross::before{
-  content: url(../svg/cross.svg);
-}
-.icon-triangel::before{
-  content: url(../svg/triangel.svg);
-}
-.icon-hexagon::before{
-  content: url(../svg/hexagon.svg);
+  font-size: 15px;
 }
 .simple-ease{
   position: relative;
